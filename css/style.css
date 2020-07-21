@@ -6,8 +6,11 @@
 
 body{
 	margin: 0px; /* Often browsers have a 5px margin by deafult*/
-	font-family: sans-serif;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+
 
 section{
 	max-width: 1000px;
@@ -18,32 +21,130 @@ section{
 }
 
 header{
-	background-color: grey;
+	background-color: blueviolet;
 	color: white; /* more readable on an orange background */
 	padding-top: 50px;
 	padding-bottom: 50px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	
 }
 
 nav{
 	width: 100%;
 	height: 60px;
-	background-color: wheat;
+	background-color: blueviolet;
 }
 
-nav a, nav h3{
-	float: left;
+nav h3{
 	margin: 0px;
 	line-height: 60px;
 	margin-left: 1em;
 	margin-right: 1em;
 	text-decoration: none;
+	color:white;
+	font-size: x-large;
+	text-align: center;
+	
+	
+}
+
+nav a{
+	margin: 0px;
+	line-height: 0px;
+	margin-left: 1em;
+	margin-right: 1em;
+	text-decoration: none;
+	float: left;
+
+
 }
 
 nav a:hover{
+	
 	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
+nav li {
+	float: left;
+	display: inline-block;
+	margin: 0 35px;
+	padding-top: 0px;
+	display:table;
+	content:'';
+	position: relative;
+			  }
 
+nav a {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	color:blueviolet;
+	line-height: 30px;
+	font: arial;  
+	text-decoration:none;
+	text-transform: uppercase;
+
+
+  }
+
+nav a::before {
+
+content:'';
+	display: block;
+	width:100%;
+	background-color:blue;
+
+}
+
+header::after {
+content: '';
+display: table;
+clear: both;
+}
+
+
+ul.demo {
+list-style-type: none;
+text-align:left;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 16px;  
+float: right;
+padding-right: 0px;
+margin:0px
+
+}
+
+nav a:hover {
+color:blue;
+
+}
+
+nav a::before {
+content: '';
+display: block;
+height: 5px;
+background-color:blue;
+
+position: relative;
+top: 0;
+width: 0%;
+
+transition: all ease-in-out 350ms;
+}
+
+nav a:hover::before {
+width: 100%;
+}
+
+
+h2 {
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
+
+p{font-size: large;}
 
 /* Simple grid */
 .g-row{
