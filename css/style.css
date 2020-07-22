@@ -144,7 +144,10 @@ h1{
 	text-align: center;
 }
 
-p{font-size: large;}
+p{font-size: large;
+	text-align: center;
+
+}
 
 /* Simple grid */
 .g-row{
